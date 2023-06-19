@@ -1,0 +1,18 @@
+runtime: python38
+
+handlers:
+  - url: /static
+    static_dir: static
+
+  - url: /model1.pickle
+    static_files: static/model1.pickle
+    upload: static/model1.pickle
+
+  - url: /encoder1.pkl
+    static_files: static/encoder1.pkl
+    upload: static/encoder1.pkl
+
+  - url: /features1.pkl
+    static_files: static/features1.pkl
+    upload: static/features1.pkl
+

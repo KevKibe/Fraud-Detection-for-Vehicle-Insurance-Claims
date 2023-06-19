@@ -1,14 +1,13 @@
 from flask import Flask, request, jsonify
 import pandas as pd
-from sklearn.metrics import classification_report
 import pickle
 import numpy as np
 
 app = Flask(__name__)
 
-model= pickle.load(open('model1.pickle','rb'))
-encoder = pickle.load(open('encoder1.pkl','rb'))
-column_names= pickle.load(open('features1.pkl','rb'))
+model= pickle.load(open('/model1.pickle','rb'))
+encoder = pickle.load(open('/encoder1.pkl','rb'))
+column_names= pickle.load(open('/features1.pkl','rb'))
  
 
 @app.route('/predict', methods=['POST'])
