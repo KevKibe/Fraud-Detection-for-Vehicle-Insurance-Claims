@@ -9,7 +9,7 @@ app = Flask(__name__)
 model= pickle.load(open('model1.pickle','rb'))
 encoder = pickle.load(open('encoder1.pkl','rb'))
 column_names= pickle.load(open('features1.pkl','rb'))
-
+ 
 
 @app.route('/predict', methods=['POST'])
 def predict():
