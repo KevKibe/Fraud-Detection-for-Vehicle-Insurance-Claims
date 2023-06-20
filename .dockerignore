@@ -1,0 +1,16 @@
+Dockerfile
+README.md
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+.pytest_caches
+.idea
+test.pyc
+.git
+.gitignore
+fraud_oracle.csv
+test.py
+README.md
+Insurance_claim_fraud.ipynb
+/venv

@@ -43,8 +43,8 @@ payload = json.dumps(input_data)
 # Set the headers for the request
 headers = {'Content-Type': 'application/json'}
 
-# Send a POST request to the API
-response = requests.post('http://localhost:5000/predict', data=payload, headers=headers)
-
+# Send a POST request to the API If the service is down you can run teh main.py and use the localhost to get predictions 
+response = requests.post('https://claim-fraud-detection-f5m2fxxbbq-uc.a.run.app/predict', data=payload, headers=headers)
+print(response.text)
 # Print the response
 print(response.json())
